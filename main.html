@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>공산주의자를 잡아라!</title>
+</head>
+<body>
+    <h1>공산주의자를 잡아라! - 홀로테이프#01</h1>
+
+    <div class = "introTxt" data-trigger>
+        <span class="text"></span>
+        <a href = "./game start/gameStart.html">다음<a>
+    </div>
+
+</body>
+</html>
+
+
+<style>
+    div{
+        align-items: center;
+        height: 100px;
+        font-size: 1.2rem;
+        white-space: pre-line;
+    }
+</style>
+
+<script>
+    const content = 
+    "일어나셨군요!\n" +
+    "방호문에서 들리는 소리가 멈춘걸 보니 재건의 날이 다가왔나봅니다!\n\n"+
+
+    " 당신은 위대하고 자유로운 미합중국의 시민이자 국가를 재건할 중요 인적자산 입니다.\n"+
+    "당신의 능력은 국가로부터 인정받았고, 때문에 당신은 전쟁중 벙커에서 보호받으며 살아남을수 있었습니다.\n"+
+    "이제 당신은 문밖으로 나가 민주주의를 재건하고 자유를 수호하세요!\n"+
+    "국가에 받은것을 보답할 시간입니다!\n\n"+
+
+    "당신은 마을주민들을 관리하는 인사과로 배정될 것 입니다.\n\n"+
+
+    "그리고 당신에게 주어진 비밀 임무가 있습니다!\n"+
+    "자유의 영원한 적... 공산주의자들이 마을에 숨어들어 우릴 위협하고 있습니다.\n"+
+    "당신은 민주주의를 위협하는 더러운 공산주의자들과 그 끄나풀을 찾아내야 합니다!\n"+
+    " 특히 노동계층을 눈여겨 보십시오."+
+    "그들은 노동계층에 숨어들어가 동료들을 세뇌시켜 반란을 도모할지도 모릅니다!\n"+
+
+    " 항상 명심하십시오!"+
+    "그들은 어디에나 있다는것을...."
+    const text = document.querySelector(".text");
+    let i = 0;
+
+    function typing(){
+        if (i < content.length) {
+        let txt = content.charAt(i);
+        text.innerHTML += txt;
+        i++;
+        }
+    }
+    setInterval(typing, 50)
+</script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>공산주의자를 잡아라!</title>
+</head>
+<body>
+    <h1>DAY : 1</h1>
+
+    <div class = "introTxt" data-trigger>
+        <span class="text"></span>
+        <a href = "./game start/gameStart.html">다음<a>
+    </div>
+
+</body>
+</html>
+
+
+<style>
+    div{
+        align-items: center;
+        height: 100px;
+        font-size: 1.2rem;
+        white-space: pre-line;
+    }
+</style>
+
+<script>
+    const content = 
+    "인사담당관님 오늘이 첫 출근이시군요!\n" +
+    "하지만 첫날이라고 풀어지시면 안됩니다!\n"+
+    "공산주의자들은 쉬는법이 없거든요!\n\n"+
+
+    "여기 공산주의자로 의심되는 주민들의 리스트가 있습니다.\n"+
+    "그들이 공산주의자라는 증거를 찾아 상부에 고발하십시오.\n\n"+
+    
+    "행운을 빕니다...."
+    const text = document.querySelector(".text");
+    let i = 0;
+
+    function typing(){
+        if (i < content.length) {
+        let txt = content.charAt(i);
+        text.innerHTML += txt;
+        i++;
+        }
+    }
+    setInterval(typing, 50)
+</script>
